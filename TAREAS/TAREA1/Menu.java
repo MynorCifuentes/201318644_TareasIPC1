@@ -1,7 +1,14 @@
 
 import java.util.Scanner;
 
+
+
+
+
+
 public class Menu {
+   
+
     public static void main(String[] args) {
         int opcion;
         Scanner entrada = new Scanner(System.in);
@@ -54,12 +61,50 @@ public class Menu {
                         if (esPrimo == true) {
                             System.out.println("El numero: " + i + " es primo");
                         }
-
                     }
-
                     break;
                 case 4:
-                    System.out.println("Opcion 4");
+                    System.out.println("Elija una opcion");
+                    System.out.println("[1] Suma");
+                    System.out.println("[2] Resta");
+                    System.out.println("[3] Multiplicacion");
+                    System.out.println("[4] Division");
+                    System.out.println("[5] Regresar]");
+                    int calculadora = entrada.nextInt();
+                    switch(calculadora){
+                        case 1:
+                        System.out.println("Ingrese el numero 1");
+                        int num1 = entrada.nextInt();
+                        System.out.println("Ingrese el numero 2");
+                        int num2 = entrada.nextInt();
+                        suma(num1, num2);
+                        break;
+                        case 2:
+                        System.out.println("Ingrese el numero 1");
+                        int resta1 = entrada.nextInt();
+                        System.out.println("Ingrese el numero 2");
+                        int resta2 = entrada.nextInt();
+                        resta(resta1, resta2);
+                        break;
+                        case 3:
+                        System.out.println("Ingrese el numero 1");
+                        int multi1 = entrada.nextInt();
+                        System.out.println("Ingrese el numero 2");
+                        int multi2 = entrada.nextInt();
+                        multiplicacion(multi1, multi2);
+                        break;
+                        case 4:
+                        System.out.println("Ingrese el numero 1");
+                        int divi1 = entrada.nextInt();
+                        System.out.println("Ingrese el numero 2");
+                        int divi2 = entrada.nextInt();
+                        division(divi1, divi2);
+                        break;
+                        case 5:
+                        System.out.println("Salir");
+                        break;
+
+                    }
                     break;
                 case 5:
                     System.out.println("Salir");
@@ -67,5 +112,17 @@ public class Menu {
             }
 
         } while (opcion < 1 || opcion > 5);
+    }
+    public static void suma(int a, int b){
+        System.out.println("La suma es: "+(a+b));
+    }
+    public static void resta(int a, int b){
+        System.out.println("La resta es: "+(a-b));
+    }
+    public static void multiplicacion(int a, int b){
+        System.out.println("La multiplicacion es: "+(a*b));
+    }
+    public static void division(int a, int b){
+        System.out.println("La division es: "+(a/b));
     }
 }
