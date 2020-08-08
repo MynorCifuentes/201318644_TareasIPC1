@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 
 
+
+
 public class Menu{
     public static void main(String[] args){
         int opcion;
@@ -29,9 +31,16 @@ public class Menu{
                 }
                 break;
 
-                
+
                 case 2: 
-                System.out.println("Opcion 2");
+                System.out.println("Ingrese numero base");
+                int base = entrada.nextInt();
+                System.out.println("Ingrese final");
+                int nfinal = entrada.nextInt();
+                for(int i = 1; i<= nfinal; i++){
+
+                    System.out.println(base+"x"+i+"="+i*base);
+                }
                 break;
                 case 3: 
                 System.out.println("Opcion 3");
