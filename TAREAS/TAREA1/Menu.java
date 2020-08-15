@@ -10,6 +10,10 @@ public class Menu {
    
 
     public static void main(String[] args) {
+        menuPrincipal();
+    }
+
+    public static void menuPrincipal(){
         int opcion;
         Scanner entrada = new Scanner(System.in);
 
@@ -101,7 +105,7 @@ public class Menu {
                         division(divi1, divi2);
                         break;
                         case 5:
-                        System.out.println("Salir");
+                        menuPrincipal();
                         break;
 
                     }
@@ -113,6 +117,8 @@ public class Menu {
 
         } while (opcion < 1 || opcion > 5);
     }
+
+
     public static void suma(int a, int b){
         System.out.println("La suma es: "+(a+b));
     }
