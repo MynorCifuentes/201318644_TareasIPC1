@@ -73,7 +73,10 @@ public class Menu {
                     System.out.println("[2] Resta");
                     System.out.println("[3] Multiplicacion");
                     System.out.println("[4] Division");
+<<<<<<< HEAD
                     System.out.println("[5] Regresar]");
+=======
+>>>>>>> 622d0e328c734c555390739d4e18f9f9cc7c1b1e
                     int calculadora = entrada.nextInt();
                     switch(calculadora){
                         case 1:
@@ -104,10 +107,13 @@ public class Menu {
                         int divi2 = entrada.nextInt();
                         division(divi1, divi2);
                         break;
+<<<<<<< HEAD
                         case 5:
                         menuPrincipal();
                         break;
 
+=======
+>>>>>>> 622d0e328c734c555390739d4e18f9f9cc7c1b1e
                     }
                     break;
                 case 5:
@@ -117,8 +123,11 @@ public class Menu {
 
         } while (opcion < 1 || opcion > 5);
     }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 622d0e328c734c555390739d4e18f9f9cc7c1b1e
     public static void suma(int a, int b){
         System.out.println("La suma es: "+(a+b));
     }
